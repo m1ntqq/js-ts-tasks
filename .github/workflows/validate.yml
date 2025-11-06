@@ -1,7 +1,7 @@
 name: Check tests
 
 on:
-  push:
+  commit_comment:
     branches:
       - "**"
 
