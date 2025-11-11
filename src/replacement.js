@@ -8,5 +8,25 @@
  * @returns {Array<number>}
  */
 module.exports.replacement = function replacement(arr) {
-  throw new Error('Not implemented'); // remove me and write a solution
+  let result = []
+
+  for (let i = 0; i < arr.length; i++) {
+    const digitCount = String(Math.abs(arr[i])).length
+    switch (digitCount) {
+      case 1:
+        result.push(1)
+        break
+      case 2:
+        result.push(2)
+        break
+      case 3:
+        result.push(3)
+        break
+      default:
+        result.push(4)
+        break
+    }
+  }
+
+  return result;
 };
